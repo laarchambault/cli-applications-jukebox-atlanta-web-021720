@@ -59,6 +59,7 @@ def run(songs)
   while juke_command != "exit" do 
     if juke_command == "help"
       help
+      
       elsif juke_command == "list"
       list(songs)
       elsif juke_command == "play"
