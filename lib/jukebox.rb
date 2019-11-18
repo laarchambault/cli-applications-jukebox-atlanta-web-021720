@@ -59,15 +59,13 @@ def run(songs)
   while juke_command != "exit" do 
     if juke_command == "help"
       help
-      
       elsif juke_command == "list"
       list(songs)
       elsif juke_command == "play"
       play(songs)
-    else
-      puts "Invalid entry. Please enter a command such as 'help'."
-      juke_command = gets.strip
     end
+    puts "Please enter a command:"
+    juke_command = gets.strip
   end
   exit_jukebox
 end
